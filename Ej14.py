@@ -1,13 +1,24 @@
-def Papa_Francisco(a, b, c):
-    if a>2>3:
-        print(a)
-    elif b>a>c:
-        print(b)
+# Definimos una función llamada 'gran' para encontrar el número más grande entre tres valores
+def gran(a, b, c):
+    if a >= b:
+        if a >= c:
+            return a
+        else:
+            return c
     else:
-        print(c)
+        if b >= c:
+            return b
+        else:
+            return c
 
-#Programa principal
-a= int(input("Introduce el primer número: "))
-b= int(input("Introduce el segundo número: "))
-c= int(input("Introduce el tercer número: "))
-Papa_Francisco(a, b, c)
+# En el uso de la función:
+# Solicitamos al usuario que introduzca tres números para comparar
+x = int(input("Introduce el primer número a comparar: "))
+y = int(input("Introduce el segundo número a comparar: "))
+z = int(input("Introduce el tercer número a comparar: "))
+
+# Llamamos a la función 'gran' para encontrar el número más grande
+c = gran(x, y, z)
+
+# Hacmos que muestre el resultado
+print("El número más grande es: {}".format(c))
