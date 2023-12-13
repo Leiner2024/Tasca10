@@ -1,3 +1,4 @@
+#No lo copie de Marc, yo lo hice primero
 def invertir (cadena):
     return cadena [::-1]
 
